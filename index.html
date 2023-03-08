@@ -1,0 +1,118 @@
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="icon" type="icon" href="clouds.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&family=Montserrat&family=Quicksand:wght@500&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b74fd1f46e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body onload="DefaultScreen()">
+    
+    <div class="title">
+        <h1 class="titletext"><img class="maincloud" src="cloud.png" alt="">Weather Forecast </h1>
+                <div class="DateDay row">
+                    <div class="Date col-lg-6">
+                        <h4 id="Date">Date</h4>
+                    </div>
+                    <div class="Time col-lg-6">
+                        <h4 id="Time">Time</h4>
+                    </div>
+                </div>
+    </div>
+
+<div class="main">
+
+    <div class="search">
+        <input type="text" class="search-bar" id="cityInput" placeholder="Search your city" />
+        <button class="src-btn" onclick="GetInfo()">Search<img class="buttoncloud" src="clouds.png" alt=""></button>
+        <h2 id="cityName" style="font-size: 3.5rem;"></h2>
+        
+
+
+    </div>
+
+    <div class="weather-container">
+        <div class="iconsContainer row">
+            <div class="icons col-lg-12">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img class="imageclass" id="img1" alt=""></div>
+                <p class="description" id="description1">Loading..p </p>
+                <p class="minvalues" id="day1min">Loading..</p>
+                <p class="maxvalues" id="day1max">Loading..</p>
+                <p class="humidity" id="humidity1">Loading..</p>
+                <p class="wind" id="wind1">Loading..</p>
+            </div>
+            <div class="icons col-lg-6">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img class="imageclass" id="img2" alt="Weather-icon"></div>
+                <p class="description" id="description2">Loading..</p>
+                <p class="minvalues" id="day2min">Loading..</p>
+                <p class="maxvalues" id="day2max">Loading..</p>
+                <p class="humidity" id="humidity2">Loading..</p>
+                <p class="wind" id="wind2">Loading..</p>
+            </div>
+            <div class="icons col-lg-6">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img class="imageclass" id="img3" alt="Weather-icon"></div>
+                <p class="description" id="description3">Loading..</p>
+                <p class="minvalues" id="day3min">Loading..</p>
+                <p class="maxvalues" id="day3max">Loading..</p>
+                <p class="humidity" id="humidity3">Loading..</p>
+                <p class="wind" id="wind3">Loading..</p>
+            </div>
+            <div class="icons col-lg-6">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img class="imageclass" id="img4" alt="Weather-icon"></div>
+                <p class="description" id="description4">Loading..</p>
+                <p class="minvalues" id="day4min">Loading..</p>
+                <p class="maxvalues" id="day4max">Loading..</p>
+                <p class="humidity" id="humidity4">Loading..</p>
+                <p class="wind" id="wind4">Loading..</p>
+                
+            </div>
+            <div class="icons col-lg-6">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img class="imageclass" id="img5" alt="Weather-icon"></div>
+                <p class="description" id="description5">Loading..</p>
+                <p class="minvalues" id="day5min">Loading..</p>
+                <p class="maxvalues" id="day5max">Loading..</p>
+                <p class="humidity" id="humidity5">Loading..</p>
+                <p class="wind" id="wind5">Loading..</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="chart">
+    <canvas id="myChart"></canvas>
+</div>
+    <div class="footer">
+        <br>
+        <a class="footer-link" href="https://www.instagram.com/navin_2k4"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a class="footer-link" href="https://twitter.com/navin_2k4"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a class="footer-link"href="https://www.facebook.com/navin.kumaran.735"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a class="footer-link" href="https://github.com/Navin2k4"><i class="fa-brands fa-github"></i> Github</a>
+        <h6 class="copy"><br>Copyrights © Navin Kumaran</h6><br>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

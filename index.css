@@ -1,0 +1,186 @@
+/* font-family: 'Genos',sans-serif;
+font-family: 'Montserrat',sans-serif;
+font-family: 'Quicksand',sans-serif;*/
+
+body,.search-bar{
+    text-align: center;
+}
+
+body{
+    background-image: url("darkclouds.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2,p.weather{
+    font-family: 'Genos', sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+p.weather {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    margin: 10px;
+    color: rgb(35, 196, 255);
+    transition: all 400ms ease-in-out;
+}
+
+.title,.footer{
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    color: #fff;
+    font-weight: 400;
+}
+
+.title {
+    margin: 20px 20px 0 20px;
+}
+
+.footer {
+    margin: 20px;
+}
+
+.imageclass{
+    height: 150px;
+    width: 150px;
+}
+
+.main{
+  background-color: #000;
+  color:white;
+  opacity: 0.6;
+  padding: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  margin: 10px 1em;
+  line-height: 1em;
+}
+
+.maincloud{
+    margin:0px 40px 0 40px;
+    padding: 0px;
+    height: 100px;
+}
+
+.search {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+input.search-bar {
+    margin:10px;
+    border-radius: 20px;
+    background: #7c7c7c2b;
+    color: #fff;
+    font-size: 100%;
+}
+
+.search-bar:hover{
+    margin-right: 30px;
+    border-color: rgb(0, 221, 255);
+    border-radius: 30px;
+    border-width: 4px;
+    border-style:solid;
+    scale: 1.1;
+    transition: all 300ms ease-in-out;
+}
+
+.src-btn{
+    border-radius: 30px;
+    height: 3em;
+    width: 10em;
+    outline: invert;
+}
+
+.src-btn:hover{
+    width: 11em;
+    border-color: rgb(0, 221, 255);
+    border-radius: 30px;
+    border-width: 4px;
+    border-style:solid;
+    scale: 1.1;
+    transition: all 300ms ease-in-out;
+}
+
+.buttoncloud {
+    padding-left: 5px;
+    height: 30px;
+}
+
+.search-bar{
+    height: 40px;
+    padding: 0 80px;
+    max-width: 80%;
+    border-radius: 20px;
+    background-attachment: fixed;
+}
+
+.icons{ 
+    padding: 20px;
+}
+.chart{
+    background-color: #000;
+    color: white;
+    opacity: 0.6;
+    padding: 5em;
+    border-radius: 30px;
+    margin: 10px 1em;
+    line-height: 1em;
+}
+
+
+@media(max-width:500px) {
+    .mainx  {
+        width: 70vw;
+        height: 75%;
+    }
+    .search-bar {
+        width: 75%;
+    }
+
+    input.search-bar {
+        font-size: 90%;
+    }
+
+    .src-btn {
+        width: 40%;
+        height: 20%;
+        aspect-ratio: 1/1;
+    }
+    
+    .city {
+        font-size: 25px;
+    }
+
+    .description,
+    .pressure {
+        font-size: 3.8vw;
+    }
+    .chart{
+        height: auto;
+        width: auto;
+    }
+}
